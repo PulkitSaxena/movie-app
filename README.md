@@ -4,9 +4,9 @@ trialers along with details.
 
 # Technologies used
 - Angular 7
-- Angular Animations
+- Angular Animations and Routing
 - Typescript
-- Rxjs
+- Rxjs - 6.3.3
 - Sass
 - Redux Store Management
 - Few PrimeNg Components Integrated
