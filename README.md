@@ -1,4 +1,4 @@
-# movie-app
+# Movies App
 A movies collection app developed in Angular with REDUX based architecture. Lists multiple movies and allows to watch their 
 trialers along with details.
 
