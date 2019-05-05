@@ -1,0 +1,9 @@
+<div *ngIf="movies" class="card-list-container">
+  <p-messages [(value)]="msgs"></p-messages>
+  <div class="card-list-wrapper">
+    <app-movie-card @created *ngFor="let movie of filteredMovies; trackBy: trackById" [movie]="movie"></app-movie-card>
+  </div>
+  <div *ngIf="!movies">
+    <h1>Loading</h1>
+  </div>
+</div>

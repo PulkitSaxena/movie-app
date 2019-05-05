@@ -1,0 +1,26 @@
+// component css
+
+.movie-card {
+    width: 19.5rem;
+    height: 32rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    border-color: azure;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.hover-name {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: -2.8rem;
+}

@@ -1,0 +1,170 @@
+// Component level css
+
+.movie-detail-container {
+    width: 100%;
+    padding-top: 6rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.detail-wrapper {
+    height: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 85% auto;
+    grid-template-areas: 
+    "left right"
+    "bottom bottom";
+    min-width: 200px;
+}
+
+.left-detail {
+    grid-area: left;
+    color: white;
+    img {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    div {
+        width: 85%;
+    }
+    h1 {
+        margin: 0rem;
+    }
+}
+
+.right-detail {
+    grid-area: right;
+    background-color: #272626;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.related-movies {
+    grid-area: bottom;
+    background-color: #272626;
+    padding: 0rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-height: 8080px) { 
+    img {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-height: 750px) { 
+    .related-movies {
+        display: none;
+        .related-movies-wrapper {
+            display: none;
+        }
+    }
+
+    img {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .detail-wrapper {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 40% auto;
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+
+    .video-container {
+        height: 60%;
+        padding-bottom: 20.25%;
+        padding-top: 30px; height: 0;
+    }
+
+    .related-movies {
+        display: none;
+        .related-movies-wrapper {
+            display: none;
+        }
+    }
+
+    .left-detail {
+        grid-area: left;
+        padding-bottom: 10%;
+        img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .detail-wrapper {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 40% auto;
+        grid-template-areas: 
+        "right"
+        "left";
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 55.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+    
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+
+.related-movies-wrapper {
+    align-items: center;
+    border: 2px solid black;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow:row;
+    height:18%;
+    position:absolute;
+    width:96%;
+    overflow-x: scroll;
+    margin-right: 2rem;
+    img {
+        height: 9rem;
+        width: 12rem;
+    }
+    .box {
+        padding: 20px;
+        color:white;
+        font-size:22px;
+        //border:1px solid white;
+        flex:1;
+        -webkit-flex:1;
+        text-align:center;
+        min-width:200px;
+    }
+}
+
+::ng-deep {
+    body .ui-rating a {
+        color:white;
+        margin-bottom: 1rem;
+    }
+}
+    

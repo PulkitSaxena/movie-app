@@ -1,0 +1,7 @@
+<div class="header">
+  <a [routerLink]="['']" class="logo"><img [src]="logoUrl"></a>
+  <div *ngIf="!showSearchBar" class="header-right">
+      <p-chips [(ngModel)]="filters" ></p-chips>
+      <button pButton pi pi-check type="button" label="Search" class="ui-button-raised ui-button-success" (click)="onTrySearch()"></button>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+<app-header [showSearchBar]="showSearchBar" (searchByFilters)="trySearch($event)"></app-header>
+<app-movie-card-list [movies]="movies$ | async" [searchFilters]="searchFilters"></app-movie-card-list>

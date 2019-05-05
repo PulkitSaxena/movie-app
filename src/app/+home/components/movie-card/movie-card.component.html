@@ -1,0 +1,5 @@
+<a [routerLink]="['/movie',movie.key]">
+      <div class="hover-name">{{movie.name}}</div>
+      <div [@hover]="hoveringState" class="movie-card" [style.backgroundImage]="'url('+ movie.img +')'"></div>
+</a>
+      

@@ -1,0 +1,22 @@
+<div *ngIf="movie" class="movie-detail-container">
+  <div class="detail-wrapper">
+    <div class="left-detail">
+      <h1>{{movie.name}}</h1><div><i class="far fa-clock">{{movie.length}}</i></div>
+      <img [src]="movie.img">
+      <p-rating [(ngModel)]="movie.rate" readonly="true" stars="10"></p-rating>
+      <p-chips [(ngModel)]="movie.genres" disabled=true inputStyleClass="chipbox"></p-chips>
+      <div><h3>{{movie.description}}</h3></div>
+    </div>
+    <div class="right-detail">
+        <div class="video-container"><iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(movie.trailerURL)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="related-movies">
+        <div class="related-movies-wrapper">
+            <div class="box" *ngFor="let movie of movies;" >
+              <a [routerLink]="['/movie',movie.key]"><img [src]="movie.img"></a>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
