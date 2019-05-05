@@ -2,6 +2,15 @@
 A movies collection app developed in Angular with REDUX based architecture. Lists multiple movies and allows to watch their 
 trialers along with details.
 
+# Technologies used
+- Angular 7
+- Angular Animations
+- Typescript
+- Rxjs
+- Sass
+- Redux Store Management
+- Few PrimeNg Components Integrated
+
 # Screenshots
 ![ScreenShot](https://github.com/PulkitSaxena/movie-app/blob/master/Screenshots/Home-page.png)
 
