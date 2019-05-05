@@ -5,6 +5,8 @@ trialers along with details.
 # Screenshots
 ![ScreenShot](https://github.com/PulkitSaxena/movie-app/blob/master/Screenshots/Home-page.png)
 
+![ScreenShot](https://github.com/PulkitSaxena/movie-app/blob/master/Screenshots/Details-page.png)
+
 
 ## Prerequisities
 - Install nodejs and npm [install](https://nodejs.org/en/download/package-manager/)
