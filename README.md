@@ -9,6 +9,7 @@ trialers along with details.
 
 
 ## Prerequisities
+- For best UI Experience please prefer Chrome browser
 - Install nodejs and npm [install](https://nodejs.org/en/download/package-manager/)
 
 ## Steps
